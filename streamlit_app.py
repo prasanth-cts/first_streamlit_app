@@ -29,7 +29,7 @@ else:
       streamlit.dataframe(fruityvice_normalized)
   
 except URLError as e:
-streamlit.error()
+    streamlit.error()
 streamlit.stop()
 #import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
